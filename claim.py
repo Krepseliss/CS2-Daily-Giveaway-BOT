@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 
 def claim_entry():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         context = browser.new_context(storage_state="F:\\PROJECTS\\SkinsMonkey BOT\\auth.json")
         page = context.new_page()
 
