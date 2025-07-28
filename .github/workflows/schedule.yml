@@ -2,8 +2,8 @@ name: Claim SkinsMonkey Entry
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour (UTC)
-  workflow_dispatch:      # Allow manual run from GitHub interface
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -28,4 +28,3 @@ jobs:
 
     - name: Run claim bot
       run: python claim.py
-
