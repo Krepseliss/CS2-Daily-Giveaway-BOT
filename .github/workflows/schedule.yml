@@ -2,7 +2,7 @@ name: Claim SkinsMonkey Entry
 
 on:
   schedule:
-    - cron: '39 * * * *'  # every hour at minute 20
+    - cron: '48 * * * *'  # every hour at minute 20
   workflow_dispatch:
 
 jobs:
