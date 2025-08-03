@@ -27,4 +27,4 @@ jobs:
         run: echo '${{ secrets.AUTH_JSON1 }}' > auth1.json
 
       - name: Run claim bot
-        run: python claim.py
+        run: python claim1.py
